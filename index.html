@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Prueba Browserify</title>
+	<link rel="stylesheet" href="">
+	<script src="./lib2.js"></script>
+</head>
+<body>
+	<button onclick="showvalues()">Mostrar</button>
+	<p id="direccion"></p>
+	<p id="inicial"></p>
+	<p id="recarga"></p>
+	<p id="consumo"></p>
+	<script type="text/javascript">
+		function showvalues() {
+			// direccion.innerHTML = "Direccion "+x;
+			direccion.innerHTML = "Direccion "+deployed.address;
+			inicial.innerHTML = "Recarga inicial "+calledGet.decodedResult.saldo;
+			recarga.innerHTML = "Luego de recargar "+calledGe2.decodedResult.saldo;
+			consumo.innerHTML = "Luego de consumir "+calledPa2.decodedResult.saldo;
+		}
+	</script>
+</body>
+</html>
